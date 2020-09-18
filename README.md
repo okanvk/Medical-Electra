@@ -1,6 +1,12 @@
 # Question-Answering-Project
 Inzva AI Projects #5 
 
+S2ORC
+https://github.com/allenai/s2orc
+
+SciBERT
+https://github.com/allenai/scibert
+
 COQA 
 paper: https://www.aclweb.org/anthology/Q19-1016.pdf
 website: https://stanfordnlp.github.io/coqa/
