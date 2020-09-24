@@ -36,6 +36,27 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5530755/
 MEANS
 https://www.sciencedirect.com/science/article/abs/pii/S0306457315000515
 
+HotpotQA
+https://hotpotqa.github.io/
+
+QAngaroo
+http://qangaroo.cs.ucl.ac.uk/index.html
+
+SciQ Dataset
+https://allenai.org/data/sciq
+
+Medical-question-answer-data (Çeşitli sitelerden toplanmış medical question answer dataseti)
+https://github.com/LasseRegin/medical-question-answer-data
+
+Hugging Face Train a Language Model From Scratch
+https://huggingface.co/blog/how-to-train
+
+PubMedQA (Biomedical QA for yes/no type questions)
+https://arxiv.org/abs/1909.06146
+
+PubMed Dataset (PubMed de yayınlanan makaleler citation bilgileri ve abstractları ile)
+https://www.nlm.nih.gov/databases/download/pubmed_medline.html
+
 Talk to Papers: Bringing Neural Question Answering to Academic Search. https://arxiv.org/abs/2004.02002 . Sanırım bizim yapmak istediğimize en yakın bu. SOCO bir framework .API ve dokümanı varmış. (https://docs.soco.ai/ )” The answer and question encoder are trained on publicly available QA datasets, including SQuAD (Rajpurkar et al., 2016), Natural Questions (Kwiatkowski et al., 2019) and MSMARCO (Nguyen et al., 2016)” → Bu veri setlerini kullanmışlar.
 
 Can Machines Learn to Comprehend Scientific Literature? (https://ieeexplore.ieee.org/document/8606080) → PaperQA veri seti kullanılmış. Linkler çalışmıyor. Google’da aratınca Kaggle’da bir tane veri seti çıkıyor (https://www.kaggle.com/c/ee448-paperqa/ ) ama sadece davet edilen kulanıcılar katılabiliyor ve veri setlerini görebiliyor.” This is a limited-participation competition. Only invited users may participate.”
