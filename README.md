@@ -62,7 +62,8 @@ We used Medical Papers S2ORC. We filtered the S2ORC database using Field of Stud
   'TABREF4': {'text': 'example text',
    'type': 'table'},
   'TABREF5': {'text': 'example text',
-   'type': 'table'}}}```
+   'type': 'table'}}} 
+   ```
 
 
 
