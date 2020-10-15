@@ -1,5 +1,85 @@
-# Question-Answering-Project
-Inzva AI Projects #5 
+# Question-Answering Project on Medical Papers
+
+## Abstract
+Question Answering (QA) is a field in the Natural Language Processing (NLP) and Information retrieval (IR). QA task basically aims to give precise and quick answers to given question in natural languages by using given data or databases. In this project, we tackled the problem of question answering on Medical Papers. There are plenty of Language Models published and available to use for Question Answering task. In this project, we wanted to develop a language model, specifically trained on Medical field. Our goal is to develop a context-specific language model on Medical papers, performs better than general language models. We used ELECTRA as our base model, and trained it using medical paper dataset, then fine-tuned on Medical QA dataset. 
+
+
+## Dataset
+We used Medical Papers S2ORC. We filtered the S2ORC database using Field of Study, and took Medical papers. The dataset consists of shards, we took 13 shards of the Medical papers. After that, we took the ones which are published on PubMed and PubMEdCentral
+
+
+{'paper_id': '1',
+ '_pdf_hash': 'example text',
+ 'abstract': [],
+ 'body_text': [{'section': '',
+   'text': 'example text',
+   'cite_spans': [],
+   'ref_spans': [{'start': 1,
+     'end': 1,
+     'text': 'Table I',
+     'ref_id': 'TABREF1'}]},
+  {'section': 'example text',
+   'text': "example text",
+   'cite_spans': [],
+   'ref_spans': []},
+  {'section': 'example text',
+   'text': 'example text',
+   'cite_spans': [{'start': 1,
+     'end': 1,
+     'text': 'example text',
+     'ref_id': 'BIBREF11'}],
+   'ref_spans': []},
+  {'section': 'example text',
+   'text': 'example text',
+   'cite_spans': [],
+   'ref_spans': []},
+  {'section': 'example text',
+   'text': 'example text',
+   'cite_spans': [],
+   'ref_spans': []},
+  {'section': 'example text',
+   'text': 'example text',
+   'cite_spans': [],
+   'ref_spans': []}],
+ 'bib_entries': {'BIBREF1': {'title': 'example text',
+   'authors': [],
+   'year': '',
+   'venue': '',
+   'link': None}
+   'year': 1,
+   'venue': 'example text',
+   'link': '1'}},
+ 'ref_entries': {'FIGREF0': {'text': 'example text',
+   'type': 'example text'},
+  'TABREF0': {'text': 'example text',
+   'type': 'table'},
+  'TABREF1': {'text': 'example text',
+   'type': 'table'},
+  'TABREF2': {'text': 'example text',
+   'type': 'table'},
+  'TABREF3': {'text': 'example text',
+   'type': 'table'},
+  'TABREF4': {'text': 'example text',
+   'type': 'table'},
+  'TABREF5': {'text': 'example text',
+   'type': 'table'}}}
+
+
+
+## Requirements
+- Python
+- Transformers
+- Pytorch
+- TensorFlow
+- 
+
+# References
+
+ELECTRA
+https://github.com/google-research/electra
+https://chriskhanhtran.github.io/_posts/2020-06-11-electra-spanish/
+
+
 
 S2ORC
 https://github.com/allenai/s2orc
