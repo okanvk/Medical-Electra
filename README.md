@@ -8,7 +8,7 @@ Question Answering (QA) is a field in the Natural Language Processing (NLP) and 
 We used Medical Papers S2ORC. We filtered the S2ORC database using Field of Study, and took Medical papers. The dataset consists of shards, we took 13 shards of the Medical papers. After that, we took the ones which are published on PubMed and PubMEdCentral
 
 
-{'paper_id': '1',
+```json{'paper_id': '1',
  '_pdf_hash': 'example text',
  'abstract': [],
  'body_text': [{'section': '',
@@ -62,7 +62,7 @@ We used Medical Papers S2ORC. We filtered the S2ORC database using Field of Stud
   'TABREF4': {'text': 'example text',
    'type': 'table'},
   'TABREF5': {'text': 'example text',
-   'type': 'table'}}}
+   'type': 'table'}}}```
 
 
 
