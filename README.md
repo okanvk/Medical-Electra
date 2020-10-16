@@ -64,6 +64,19 @@ Using the generated corpus, we pre-trained ELECTRA-small model from scratch. The
 | ELECTRA-Small |     12     |         256         |        14M          |
 
 
+### ELECTRA-Small
+
+| Model/Hyperparameters | epoch | max_seq_length | per_gpu_train_batch_size |
+|:----------------------|:-----:|:--------------:|:------------------------:|
+|     Electra-Small     |    -  |      -         |            -             |        
+
+
+### RESULTS
+|   Model/Score   |    F1    |    Exact   |  Loss Exact  |
+|:----------------|:--------:|:----------:|:------------:|
+| Electra         |     -    |     -      |      -       |   
+| BERT, Cased     |     -    |     -      |      -       |
+| BERT, Uncased   |     -    |       -    |      -       |
 
 ## Requirements
 - Python
