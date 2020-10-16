@@ -5,7 +5,7 @@ Question Answering (QA) is a field in the Natural Language Processing (NLP) and 
 
 
 ## Dataset
-We used Medical Papers S2ORC. We filtered the S2ORC database using Field of Study, and took Medical papers. The dataset consists of shards, we took 13 shards of the Medical papers. After that, we took the ones which are published on PubMed and PubMEdCentral. We used only the pdf_parses of those papers, since sentences in the pdf_parses contains more information. 
+We used Medical Papers S2ORC. We filtered the S2ORC database using Field of Study, and took Medical papers. The dataset consists of shards, we took 13 shards of the Medical papers. After that, we took the ones which are published on PubMed and PubMEdCentral. We used only the pdf_parses of those papers, since sentences in the pdf_parses contains more information.
 
 
 ```json{'paper_id': '1',
@@ -66,11 +66,17 @@ We used Medical Papers S2ORC. We filtered the S2ORC database using Field of Stud
    ```
    
    Corpus Data Summary
-|               |  Sentence  |   Vocabulary size   | 
-| ------------- |:----------:|:-------------------:|
-|     Train     | 111537350  |       27609654      |
+|               |  Sentence  |      Vocabulary     |         Size        |
+| ------------- |:----------:|:-------------------:|:-------------------:|
+|     Train     | 111537350  |       27609654      |        16GB         |
 
 
+## Model Training
+Using the generated corpus, we pre-trained ELECTRA-small model from scratch. The model is trained on RTX 2080 Ti GPU. 
+
+|      Model    |  Layers    |      Hidden Size    |     Parameters      |
+| ------------- |:----------:|:-------------------:|:-------------------:|
+| ELECTRA-Small |     12     |         256         |        14M          |
 
 ## Requirements
 - Python
