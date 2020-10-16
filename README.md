@@ -9,60 +9,45 @@ We used Medical Papers S2ORC. We filtered the S2ORC database using Field of Stud
 
 
 ```json{'paper_id': '1',
- '_pdf_hash': 'example text',
- 'abstract': [],
- 'body_text': [{'section': '',
-   'text': 'example text',
-   'cite_spans': [],
-   'ref_spans': [{'start': 1,
-     'end': 1,
-     'text': 'Table I',
-     'ref_id': 'TABREF1'}]},
-  {'section': 'example text',
-   'text': "example text",
-   'cite_spans': [],
-   'ref_spans': []},
-  {'section': 'example text',
-   'text': 'example text',
-   'cite_spans': [{'start': 1,
-     'end': 1,
-     'text': 'example text',
-     'ref_id': 'BIBREF11'}],
-   'ref_spans': []},
-  {'section': 'example text',
-   'text': 'example text',
-   'cite_spans': [],
-   'ref_spans': []},
-  {'section': 'example text',
-   'text': 'example text',
-   'cite_spans': [],
-   'ref_spans': []},
-  {'section': 'example text',
-   'text': 'example text',
-   'cite_spans': [],
-   'ref_spans': []}],
- 'bib_entries': {'BIBREF1': {'title': 'example text',
-   'authors': [],
-   'year': '',
-   'venue': '',
-   'link': None}
-   'year': 1,
-   'venue': 'example text',
-   'link': '1'}},
- 'ref_entries': {'FIGREF0': {'text': 'example text',
-   'type': 'example text'},
-  'TABREF0': {'text': 'example text',
-   'type': 'table'},
-  'TABREF1': {'text': 'example text',
-   'type': 'table'},
-  'TABREF2': {'text': 'example text',
-   'type': 'table'},
-  'TABREF3': {'text': 'example text',
-   'type': 'table'},
-  'TABREF4': {'text': 'example text',
-   'type': 'table'},
-  'TABREF5': {'text': 'example text',
-   'type': 'table'}}} 
+{
+    "section": "Introduction",
+    "text": "Dogs are happier cats [13, 15]. See Figure 3 for a diagram.",
+    "cite_spans": [
+        {"start": 22, "end": 25, "text": "[13", "ref_id": "BIBREF11"},
+        {"start": 27, "end": 30, "text": "15]", "ref_id": "BIBREF30"},
+        ...
+    ],
+    "ref_spans": [
+        {"start": 36, "end": 44, "text": "Figure 3", "ref_id": "FIGREF2"},
+    ]
+}
+{
+    ...,
+    "BIBREF11": {
+        "title": "Do dogs dream of electric humans?",
+        "authors": [
+            {"first": "Lucy", "middle": ["Lu"], "last": "Wang", "suffix": ""}, 
+            {"first": "Mark", "middle": [], "last": "Neumann", "suffix": "V"}
+        ],
+        "year": "", 
+        "venue": "barXiv",
+        "link": null
+    },
+    ...
+}
+{
+    "TABREF4": {
+        "text": "Table 5. Clearly, we achieve SOTA here or something.",
+        "type": "table"
+    }
+    ...,
+    "FIGREF2": {
+        "text": "Figure 3. This is the caption of a pretty figure.",
+        "type": "figure"
+    },
+    ...
+}
+} 
    ```
    
    Corpus Data Summary
@@ -77,6 +62,8 @@ Using the generated corpus, we pre-trained ELECTRA-small model from scratch. The
 |      Model    |  Layers    |      Hidden Size    |     Parameters      |
 | ------------- |:----------:|:-------------------:|:-------------------:|
 | ELECTRA-Small |     12     |         256         |        14M          |
+
+
 
 ## Requirements
 - Python
