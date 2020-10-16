@@ -7,7 +7,6 @@ Question Answering (QA) is a field in the Natural Language Processing (NLP) and 
 ## Dataset
 We used Medical Papers S2ORC. We filtered the S2ORC database using Field of Study, and took Medical papers. The dataset consists of shards, we took 13 shards of the Medical papers. After that, we took the ones which are published on PubMed and PubMEdCentral. We used only the pdf_parses of those papers, since sentences in the pdf_parses contains more information.
 
-
 ```json{'paper_id': '1',
 {
     "section": "Introduction",
@@ -56,6 +55,7 @@ We used Medical Papers S2ORC. We filtered the S2ORC database using Field of Stud
 |     Train     | 111537350  |       27609654      |        16GB         |
 
 
+
 ## Model Training
 Using the generated corpus, we pre-trained ELECTRA-small model from scratch. The model is trained on RTX 2080 Ti GPU. 
 
@@ -87,57 +87,12 @@ Using the generated corpus, we pre-trained ELECTRA-small model from scratch. The
 
 # References
 
-ELECTRA
 https://github.com/google-research/electra
 https://chriskhanhtran.github.io/_posts/2020-06-11-electra-spanish/
-
-
-
-S2ORC
 https://github.com/allenai/s2orc
-
-SciBERT
 https://github.com/allenai/scibert
-
-COQA 
-paper: https://www.aclweb.org/anthology/Q19-1016.pdf
-website: https://stanfordnlp.github.io/coqa/
-
-Large QA datasets: https://github.com/ad-freiburg/large-qa-datasets
-
-ORQA
-https://arxiv.org/pdf/1906.00300.pdf
-https://github.com/google-research/language/tree/master/language/orqa
-https://github.com/google-research/language/tree/master/language/realm
-
-QuAC
-https://quac.ai/
-
-MedQuAD dataset
 https://github.com/abachaa/MedQuAD
-
-arXiv dataset
-https://www.kaggle.com/Cornell-University/arxiv
-
-emrQA
-https://www.aclweb.org/anthology/D18-1258/
-
-Medical question answering for clinical decision support
 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5530755/
-
-MEANS
-https://www.sciencedirect.com/science/article/abs/pii/S0306457315000515
-
-HotpotQA
-https://hotpotqa.github.io/
-
-QAngaroo
-http://qangaroo.cs.ucl.ac.uk/index.html
-
-SciQ Dataset
-https://allenai.org/data/sciq
-
-Medical-question-answer-data (Çeşitli sitelerden toplanmış medical question answer dataseti)
 https://github.com/LasseRegin/medical-question-answer-data
 
 Hugging Face Train a Language Model From Scratch
