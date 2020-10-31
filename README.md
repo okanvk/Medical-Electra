@@ -82,9 +82,9 @@ The training results can be accessed here:
 https://tensorboard.dev/experiment/G9PkBFZaQeaCr7dGW2ULjQ/#scalars
 https://tensorboard.dev/experiment/qu1bQ0MiRGOCgqbZHQs2tA/#scalars
 
-You can see the loss graph here:
-![Loss graph](/images/model_loss.png)
 
+![Loss graph](/images/model_loss.png)
+Loss Graph
 
 ### RESULTS
 |   Model/Score   |    F1    |    Exact   |  Loss Exact  |
