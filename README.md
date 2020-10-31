@@ -3,6 +3,13 @@
 ## Abstract
 Question Answering (QA) is a field in the Natural Language Processing (NLP) and Information retrieval (IR). QA task basically aims to give precise and quick answers to given question in natural languages by using given data or databases. In this project, we tackled the problem of question answering on Medical Papers. There are plenty of Language Models published and available to use for Question Answering task. In this project, we wanted to develop a language model, specifically trained on Medical field. Our goal is to develop a context-specific language model on Medical papers, performs better than general language models. We used ELECTRA-small as our base model, and trained it using medical paper dataset, then fine-tuned on Medical QA dataset. 
 
+You can access our med-electra small model here:
+
+
+
+
+https://huggingface.co/enelpi/med-electra-small-discriminator
+
 
 ## Dataset
 We used Medical Papers S2ORC. We filtered the S2ORC database using Field of Study, and took Medical papers. The dataset consists of shards, we took 13 shards of the Medical papers. After that, we took the ones which are published on PubMed and PubMEdCentral. We used only the pdf_parses of those papers, since sentences in the pdf_parses contains more information.
@@ -52,7 +59,7 @@ We used Medical Papers S2ORC. We filtered the S2ORC database using Field of Stud
    Corpus Data Summary
 |               |  Sentence  |      Vocabulary     |         Size        |
 | ------------- |:----------:|:-------------------:|:-------------------:|
-|     Train     | 111537350  |       27609654      |        16GB         |
+|     Train     | 111537350  |       27609654      |        16.9GB       |
 
 
 
@@ -64,12 +71,38 @@ Using the generated corpus, we pre-trained ELECTRA-small model from scratch. The
 | ELECTRA-Small |     12     |         256         |        14M          |
 
 
+Number of Lines: 111332331
+
+Number of words(tokens): 2538210492
+
+|      Metric                  |     Value    |
+| -----------------------------|:------------:|
+| disc_accuracy                |     0.9456   |
+| disc_auc                     |     0.9256   |
+| disc_loss                    |     0.154    |
+| disc_precision               |     0.7832   |
+| disc_recall                  |     0.4545   |
+| loss                         |     10.45    |
+| maked_lm_accuracy            |     0.5168   |
+| maked_lm_loss                |     2.776    |
+| sampled_masked_lm_accuracy   |     0.4135   |
+
+
+
+
 ### ELECTRA-Small
 
-| Model/Hyperparameters | epoch | max_seq_length | per_gpu_train_batch_size |
-|:----------------------|:-----:|:--------------:|:------------------------:|
-|     Electra-Small     |    -  |      -         |            -             |        
+| Model/Hyperparameters | train_steps | vocab_size | batch_size |
+|:----------------------|:-----------:|:----------:|:----------:|
+|     Electra-Small     |    1M       |     64000  |   128      |        
 
+The training results can be accessed here:
+
+https://tensorboard.dev/experiment/G9PkBFZaQeaCr7dGW2ULjQ/#scalars
+https://tensorboard.dev/experiment/qu1bQ0MiRGOCgqbZHQs2tA/#scalars
+
+
+![Loss graph](/images/model_loss.png)
 
 ### RESULTS
 |   Model/Score   |    F1    |    Exact   |  Loss Exact  |
@@ -83,7 +116,6 @@ Using the generated corpus, we pre-trained ELECTRA-small model from scratch. The
 - Transformers
 - Pytorch
 - TensorFlow
-- 
 
 # References
 
