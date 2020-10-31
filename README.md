@@ -71,7 +71,7 @@ Using the generated corpus, we pre-trained ELECTRA-small model from scratch. The
 | ELECTRA-Small |     12     |         256         |        14M          |
 
 
-Number of Lines: 111332331.
+Number of Lines: 111332331
 
 Number of words(tokens): 2538210492
 
