@@ -79,7 +79,7 @@ https://tensorboard.dev/experiment/G9PkBFZaQeaCr7dGW2ULjQ/#scalars
 https://tensorboard.dev/experiment/qu1bQ0MiRGOCgqbZHQs2tA/#scalars
 
 You can see the loss graph here:
-
+![Loss graph](/images/logo.png)
 
 
 ### RESULTS
