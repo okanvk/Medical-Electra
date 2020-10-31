@@ -3,6 +3,9 @@
 ## Abstract
 Question Answering (QA) is a field in the Natural Language Processing (NLP) and Information retrieval (IR). QA task basically aims to give precise and quick answers to given question in natural languages by using given data or databases. In this project, we tackled the problem of question answering on Medical Papers. There are plenty of Language Models published and available to use for Question Answering task. In this project, we wanted to develop a language model, specifically trained on Medical field. Our goal is to develop a context-specific language model on Medical papers, performs better than general language models. We used ELECTRA-small as our base model, and trained it using medical paper dataset, then fine-tuned on Medical QA dataset. 
 
+You can access our med-electra small model here:
+https://huggingface.co/enelpi/med-electra-small-discriminator
+
 
 ## Dataset
 We used Medical Papers S2ORC. We filtered the S2ORC database using Field of Study, and took Medical papers. The dataset consists of shards, we took 13 shards of the Medical papers. After that, we took the ones which are published on PubMed and PubMEdCentral. We used only the pdf_parses of those papers, since sentences in the pdf_parses contains more information.
@@ -69,6 +72,14 @@ Using the generated corpus, we pre-trained ELECTRA-small model from scratch. The
 | Model/Hyperparameters | epoch | max_seq_length | per_gpu_train_batch_size |
 |:----------------------|:-----:|:--------------:|:------------------------:|
 |     Electra-Small     |    -  |      -         |            -             |        
+
+The training results can be accessed here:
+
+https://tensorboard.dev/experiment/G9PkBFZaQeaCr7dGW2ULjQ/#scalars
+https://tensorboard.dev/experiment/qu1bQ0MiRGOCgqbZHQs2tA/#scalars
+
+You can see the loss graph here:
+
 
 
 ### RESULTS
