@@ -84,7 +84,6 @@ https://tensorboard.dev/experiment/qu1bQ0MiRGOCgqbZHQs2tA/#scalars
 
 
 ![Loss graph](/images/model_loss.png)
-Loss Graph
 
 ### RESULTS
 |   Model/Score   |    F1    |    Exact   |  Loss Exact  |
