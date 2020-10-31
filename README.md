@@ -71,6 +71,24 @@ Using the generated corpus, we pre-trained ELECTRA-small model from scratch. The
 | ELECTRA-Small |     12     |         256         |        14M          |
 
 
+Number of Lines: 111332331
+Number of words(tokens): 2538210492
+
+|      Metric                  |     Value    |
+| -----------------------------|:------------:|
+| disc_accuracy                |     0.9456   |
+| disc_auc                     |     0.9256   |
+| disc_loss                    |     0.154    |
+| disc_precision               |     0.7832   |
+| disc_recall                  |     0.4545   |
+| loss                         |     10.45    |
+| maked_lm_accuracy            |     0.5168   |
+| maked_lm_loss                |     2.776    |
+| sampled_masked_lm_accuracy   |     0.4135   |
+
+
+
+
 ### ELECTRA-Small
 
 | Model/Hyperparameters | epoch | max_seq_length | per_gpu_train_batch_size |
@@ -97,7 +115,6 @@ https://tensorboard.dev/experiment/qu1bQ0MiRGOCgqbZHQs2tA/#scalars
 - Transformers
 - Pytorch
 - TensorFlow
-- 
 
 # References
 
