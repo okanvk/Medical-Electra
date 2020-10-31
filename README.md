@@ -59,7 +59,7 @@ We used Medical Papers S2ORC. We filtered the S2ORC database using Field of Stud
    Corpus Data Summary
 |               |  Sentence  |      Vocabulary     |         Size        |
 | ------------- |:----------:|:-------------------:|:-------------------:|
-|     Train     | 111537350  |       27609654      |        16GB         |
+|     Train     | 111537350  |       27609654      |        16.9GB       |
 
 
 
@@ -92,9 +92,9 @@ Number of words(tokens): 2538210492
 
 ### ELECTRA-Small
 
-| Model/Hyperparameters | epoch | max_seq_length | per_gpu_train_batch_size |
-|:----------------------|:-----:|:--------------:|:------------------------:|
-|     Electra-Small     |    -  |      -         |            -             |        
+| Model/Hyperparameters | train_steps | vocab_size | batch_size |
+|:----------------------|:-----------:|:----------:|:----------:|
+|     Electra-Small     |    1M       |     64000  |   128      |        
 
 The training results can be accessed here:
 
