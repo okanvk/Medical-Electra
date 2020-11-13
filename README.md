@@ -106,6 +106,7 @@ https://tensorboard.dev/experiment/qu1bQ0MiRGOCgqbZHQs2tA/#scalars
 
 ### RESULTS
 ### Named Entity Recognition
+For named entity recognition,we used NCBI-Disease corpus, which is a resource for disease name recognition published in PubMed. 
 
 #### Sequence Length 128
 
@@ -134,7 +135,7 @@ https://tensorboard.dev/experiment/qu1bQ0MiRGOCgqbZHQs2tA/#scalars
 |   Model                                |    F1    |    Loss    |  accuracy    |  precision  |  recall  |
 |:---------------------------------------|:--------:|:----------:|:------------:|:-----------:|:--------:|
 | enelpi/med-electra-small-discriminator |  0.8463  |   0.0559   |     0.9823   |    0.8071   |  0.8895  |
-| google/electra-small-discriminator     |  -       |   -        |     -        |    -        |  -       |
+| google/electra-small-discriminator     |  0.8280  |   0.0691   |     0.9806   |    0.8025   |  0.8552  |
 | google/electra-base-discriminator      |  0.8542  |   0.0645   |     0.9840   |    0.8307   |  0.8791  |
 | distilbert-base-uncased                |  0.8424  |   0.0799   |     0.9822   |    0.8251   |  0.8604  |
 | distilroberta-base                     |  0.8339  |   0.0924   |     0.9806   |    0.8136   |  0.8552  |
@@ -154,6 +155,7 @@ https://github.com/allenai/s2orc
 https://github.com/allenai/scibert
 https://github.com/abachaa/MedQuAD
 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5530755/
+https://pubmed.ncbi.nlm.nih.gov/24393765/
 https://github.com/LasseRegin/medical-question-answer-data
 https://huggingface.co/blog/how-to-train
 https://arxiv.org/abs/1909.06146
