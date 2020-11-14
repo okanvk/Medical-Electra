@@ -141,6 +141,18 @@ For named entity recognition,we used NCBI-Disease corpus, which is a resource fo
 | distilroberta-base                     |  0.8339  |   0.0924   |     0.9806   |    0.8136   |  0.8552  |
 
 
+### Question Answering
+For Question Answering task, we used BioASQ question dataset.
+
+|   Model                                    |    SAcc  |    LAcc    |
+|:-------------------------------------------|:--------:|:----------:|
+| enelpi/med-electra-small-discriminator-128 |  0.2821  |   0.4359   |
+| google/electra-small-discriminator-128     |  0.3077  |   0.5128   |
+| enelpi/med-electra-small-discriminator-512 |  0.1538  |   0.3590   |
+| google/electra-small-discriminator-512     |  0.2564  |   0.5128   |
+
+
+
 ## Requirements
 - Python
 - Transformers
