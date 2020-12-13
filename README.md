@@ -151,6 +151,9 @@ For Question Answering task, we used BioASQ question dataset.
 | enelpi/med-electra-small-discriminator-512 |  0.1538  |   0.3590   |
 | google/electra-small-discriminator-512     |  0.2564  |   0.5128   |
 
+## Presentation
+You can access presentation video from YouTube.
+https://www.youtube.com/watch?v=faO9cLYFLdc&list=PLhnxo6HZwBglge_IYwGyXNmpz-3pGPggt&index=2
 
 
 ## Requirements
