@@ -57,9 +57,9 @@ We used Medical Papers S2ORC. We filtered the S2ORC database using Field of Stud
    ```
    
    Corpus Data Summary
-|               |  Sentence  |      Vocabulary     |         Size        |
-| ------------- |:----------:|:-------------------:|:-------------------:|
-|     Train     | 111537350  |       27609654      |        16.9GB       |
+|               |  Sentence  |      Unique Words     |         Size        |    Token Size   |
+| ------------- |:----------:|:---------------------:|:-------------------:|:----------------|
+|     Train     | 111537350  |       27609654        |        16.9GB       |    2538210492   |
 
 
 
