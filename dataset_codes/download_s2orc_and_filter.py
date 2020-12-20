@@ -87,7 +87,7 @@ if __name__ == '__main__':
     #Buradaki linkleri shardlara göre değiştireceğiz. Bu örnekte ben 6. shardı aldım. Download etmek istediğimiz shardın linkleri 
     #Full:https://www.dropbox.com/s/fnu7wf955wkn96m/dl_s2orc_20200705v1_full_urls_expires_20201105.sh?dl=0  burada. 
     download_linkss = [
-        {"metadata": "https://ai2-s2-s2orc.s3.amazonaws.com/20200705v1/full/metadata/metadata_9.jsonl.gz?AWSAccessKeyId=AKIA5BJLZJPW4OD5EQ2P&Signature=MXr%2FU2UUnmgSooQydQkxfE8n0bk%3D&Expires=1604601325", "pdf_parses": "https://ai2-s2-s2orc.s3.amazonaws.com/20200705v1/full/pdf_parses/pdf_parses_9.jsonl.gz?AWSAccessKeyId=AKIA5BJLZJPW4OD5EQ2P&Signature=ShR9%2FCxAo%2BsfkYUrPZVIDyZ%2BdU4%3D&Expires=1604601327"}  
+        {"metadata": "", "pdf_parses": ""}  
 
     ]
 
