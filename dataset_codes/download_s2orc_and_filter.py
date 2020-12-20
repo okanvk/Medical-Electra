@@ -85,7 +85,6 @@ if __name__ == '__main__':
     
     
     #Buradaki linkleri shardlara göre değiştireceğiz. Bu örnekte ben 6. shardı aldım. Download etmek istediğimiz shardın linkleri 
-    #Full:https://www.dropbox.com/s/fnu7wf955wkn96m/dl_s2orc_20200705v1_full_urls_expires_20201105.sh?dl=0  burada. 
     download_linkss = [
         {"metadata": "", "pdf_parses": ""}  
 
