@@ -1,18 +1,23 @@
 # Medical Field Specific Electra Model
 
 ## Abstract
-Question Answering (QA) is a field in the Natural Language Processing (NLP) and Information retrieval (IR). QA task basically aims to give precise and quick answers to given question in natural languages by using given data or databases. In this project, we tackled the problem of question answering on Medical Papers. There are plenty of Language Models published and available to use for Question Answering task. In this project, we wanted to develop a language model, specifically trained on Medical field. Our goal is to develop a context-specific language model on Medical papers, performs better than general language models. We used ELECTRA-small as our base model, and trained it using medical paper dataset, then fine-tuned on Medical QA dataset. 
+Question Answering (QA) is a field in the Natural Language Processing (NLP) and Information retrieval (IR). QA task basically aims to give precise and quick answers to given question in natural languages by using given data or databases. In this project, we tackled the problem of question answering on Medical Papers. There are plenty of Language Models published and available to use for Question Answering task. In this project, we wanted to develop a language model, specifically trained on Medical field. Our goal is to develop a context-specific language model on Medical papers, performs better than general language models. We used ELECTRA-small as our base model, and trained it using medical paper dataset, then fine-tuned on Medical QA dataset. We trained three different models, and compared their results on the NLP downstream tasks.
 
-You can access our med-electra small model here:
-
-
+You can access our models here:
 
 
+
+med-electra small model 17GB - 64k vocab
 https://huggingface.co/enelpi/med-electra-small-discriminator
 
+med-electra small model 39GB - 30.5k vocab
 
-## Dataset
-We used Medical Papers S2ORC. We filtered the S2ORC database using Field of Study, and took Medical papers. The dataset consists of shards, we took 11 shards of the Medical papers. After that, we took the ones which are published on PubMed and PubMEdCentral. We used only the pdf_parses of those papers, since sentences in the pdf_parses contains more information.
+
+med-electra small model 39GB - 64k vocab
+
+
+## Datasets
+We used Medical Papers S2ORC. We filtered the S2ORC database using Field of Study, and took Medical papers. We used two different datasets,  consists of shards, we took 11 shards for the 17GB dataset, and used 26 shards for 39GB dataset. After that, we took the ones which are published on PubMed and PubMEdCentral. We used only the pdf_parses of those papers, since sentences in the pdf_parses contains more information.
 
 ```json{'paper_id': '1',
 {
@@ -56,11 +61,16 @@ We used Medical Papers S2ORC. We filtered the S2ORC database using Field of Stud
 } 
    ```
    
-   Corpus Data Summary
+   Corpus Data Summary for 17GB
 |               |  Sentence  |      Unique Words     |         Size        |    Token Size   |
 | ------------- |:----------:|:---------------------:|:-------------------:|:----------------|
 |     Train     | 111537350  |       27609654        |        16.9GB       |    2538210492   |
 
+
+   Corpus Data Summary for 39GB
+|               |  Sentence  |      Unique Words     |         Size        |    Token Size   |
+| ------------- |:----------:|:---------------------:|:-------------------:|:----------------|
+|     Train     | 263134203  |       52206886        |        39.9GB       |    6000436472   |
 
 
 ## Model Training
@@ -70,6 +80,8 @@ Using the generated corpus, we pre-trained ELECTRA-small model from scratch. The
 | ------------- |:----------:|:-------------------:|:-------------------:|
 | ELECTRA-Small |     12     |         256         |        14M          |
 
+
+For 17GB
 
 Number of Lines: 111332331
 
@@ -92,6 +104,8 @@ Number of words(tokens): 2538210492
 
 ### ELECTRA-Small
 
+For 17GB 
+
 | Model/Hyperparameters | train_steps | vocab_size | batch_size |
 |:----------------------|:-----------:|:----------:|:----------:|
 |     Electra-Small     |    1M       |     64000  |   128      |        
@@ -103,6 +117,7 @@ https://tensorboard.dev/experiment/qu1bQ0MiRGOCgqbZHQs2tA/#scalars
 
 
 ![Loss graph](/images/model_loss.png)
+
 
 ### RESULTS
 ### Named Entity Recognition
