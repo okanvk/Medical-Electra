@@ -95,8 +95,8 @@ Number of words(tokens): 2538210492
 | disc_precision               |     0.7832   |
 | disc_recall                  |     0.4545   |
 | loss                         |     10.45    |
-| maked_lm_accuracy            |     0.5168   |
-| maked_lm_loss                |     2.776    |
+| masked_lm_accuracy            |     0.5168   |
+| masked_lm_loss                |     2.776    |
 | sampled_masked_lm_accuracy   |     0.4135   |
 
 
