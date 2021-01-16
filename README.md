@@ -101,10 +101,28 @@ Number of words(tokens): 2538210492
 
 
 
+For 39GB with 30.5K vocabulary size
 
-### ELECTRA-Small
+Number of Lines: 263134203
 
-For 17GB 
+Number of words(tokens): 6000436472
+
+|      Metric                  |     Value    |
+| -----------------------------|:------------:|
+| disc_accuracy                |     0.943    |
+| disc_auc                     |     0.9184   |
+| disc_loss                    |     0.1609   |
+| disc_precision               |     0.7718   |
+| disc_recall                  |     0.4153   |
+| loss                         |     10.72    |
+| maked_lm_accuracy            |     0.5218   |
+| maked_lm_loss                |     2.7      |
+| sampled_masked_lm_accuracy   |     0.4177   |
+
+
+### ELECTRA-Small 17GB 64K Vocab
+
+For 
 
 | Model/Hyperparameters | train_steps | vocab_size | batch_size |
 |:----------------------|:-----------:|:----------:|:----------:|
@@ -117,6 +135,21 @@ https://tensorboard.dev/experiment/qu1bQ0MiRGOCgqbZHQs2tA/#scalars
 
 
 ![Loss graph](/images/model_loss.png)
+
+
+### ELECTRA-Small 39GB 30.5K Vocab
+
+For 
+
+| Model/Hyperparameters | train_steps | vocab_size | batch_size |
+|:----------------------|:-----------:|:----------:|:----------:|
+|     Electra-Small     |    1M       |     30522  |   128      |        
+
+The training results can be accessed here:
+
+https://tensorboard.dev/experiment/nPyU6mKhRmGOyd8KdSqW5w/#scalars
+https://tensorboard.dev/experiment/ZQbEq7ZjSdyijS5jB8ov3g/#scalars
+
 
 
 ### RESULTS
