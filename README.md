@@ -150,7 +150,7 @@ The training results can be accessed here:
 https://tensorboard.dev/experiment/nPyU6mKhRmGOyd8KdSqW5w/#scalars
 https://tensorboard.dev/experiment/ZQbEq7ZjSdyijS5jB8ov3g/#scalars
 
-
+![Loss graph](/images/model_loss_30K.png)
 
 ### RESULTS
 ### Named Entity Recognition
