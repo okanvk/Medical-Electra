@@ -11,7 +11,7 @@ med-electra small model 17GB - 64k vocab
 https://huggingface.co/enelpi/med-electra-small-discriminator
 
 med-electra small model 39GB - 30.5k vocab
-
+https://huggingface.co/enelpi/med-electra-small-30k-discriminator
 
 med-electra small model 39GB - 64k vocab
 
