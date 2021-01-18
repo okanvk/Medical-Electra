@@ -14,6 +14,7 @@ med-electra small model 39GB - 30.5k vocab
 https://huggingface.co/enelpi/med-electra-small-30k-discriminator
 
 med-electra small model 39GB - 64k vocab
+https://huggingface.co/enelpi/med-electra-small-64k-discriminator
 
 
 ## Datasets
@@ -180,7 +181,7 @@ https://tensorboard.dev/experiment/ZQbEq7ZjSdyijS5jB8ov3g/#scalars
 
 ![Loss graph](/images/model_loss_30K.png)
 
-### ELECTRA-Small 39GB 30.5K Vocab
+### ELECTRA-Small 39GB 64K Vocab
 
 For 
 
