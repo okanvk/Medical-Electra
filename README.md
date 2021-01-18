@@ -189,10 +189,11 @@ For
 |     Electra-Small     |    1M       |     64000  |   128      | 
 
 The training results can be accessed here:
+
 https://tensorboard.dev/experiment/Gc51RMHDTGmJ7EQ0uYUAVw/#scalars
 https://tensorboard.dev/experiment/Q66kfO3lQTWK1kyKgjcYYg/#scalars
 
-
+![Loss graph](/images/model_loss_64K.png)
 
 ### RESULTS
 ### Named Entity Recognition
