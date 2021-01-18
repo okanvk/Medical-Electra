@@ -87,6 +87,8 @@ Number of Lines: 111332331
 
 Number of words(tokens): 2538210492
 
+This model took 6 days 12 hours to train 
+
 |      Metric                  |     Value    |
 | -----------------------------|:------------:|
 | disc_accuracy                |     0.9456   |
@@ -95,9 +97,10 @@ Number of words(tokens): 2538210492
 | disc_precision               |     0.7832   |
 | disc_recall                  |     0.4545   |
 | loss                         |     10.45    |
-| masked_lm_accuracy            |     0.5168   |
-| masked_lm_loss                |     2.776    |
+| masked_lm_accuracy           |     0.5168   |
+| masked_lm_loss               |     2.776    |
 | sampled_masked_lm_accuracy   |     0.4135   |
+
 
 
 
@@ -106,6 +109,8 @@ For 39GB with 30.5K vocabulary size
 Number of Lines: 263134203
 
 Number of words(tokens): 6000436472
+
+This model took 5 days 9 hours to train 
 
 |      Metric                  |     Value    |
 | -----------------------------|:------------:|
@@ -118,6 +123,29 @@ Number of words(tokens): 6000436472
 | masked_lm_accuracy            |     0.5218   |
 | masked_lm_loss                |     2.7      |
 | sampled_masked_lm_accuracy   |     0.4177   |
+
+
+
+
+For 39GB with 64K vocabulary size
+
+Number of Lines: 263134203
+
+Number of words(tokens): 6000436472
+
+This model took 6 days 12 hours to train 
+
+|      Metric                  |     Value    |
+| -----------------------------|:------------:|
+| disc_accuracy                |     0.9453   |
+| disc_auc                     |     0.9278   |
+| disc_loss                    |     0.1534   |
+| disc_precision               |     0.7788   |
+| disc_recall                  |     0.4655   |
+| loss                         |     10.48    |
+| masked_lm_accuracy           |     0.5095   |
+| masked_lm_loss               |     2.82     |
+| sampled_masked_lm_accuracy   |     0.4066   |
 
 
 ### ELECTRA-Small 17GB 64K Vocab
@@ -151,6 +179,21 @@ https://tensorboard.dev/experiment/nPyU6mKhRmGOyd8KdSqW5w/#scalars
 https://tensorboard.dev/experiment/ZQbEq7ZjSdyijS5jB8ov3g/#scalars
 
 ![Loss graph](/images/model_loss_30K.png)
+
+### ELECTRA-Small 39GB 30.5K Vocab
+
+For 
+
+| Model/Hyperparameters | train_steps | vocab_size | batch_size |
+|:----------------------|:-----------:|:----------:|:----------:|
+|     Electra-Small     |    1M       |     64000  |   128      | 
+
+The training results can be accessed here:
+
+https://tensorboard.dev/experiment/Gc51RMHDTGmJ7EQ0uYUAVw/#scalars
+https://tensorboard.dev/experiment/Q66kfO3lQTWK1kyKgjcYYg/#scalars
+
+![Loss graph](/images/model_loss_64K.png)
 
 ### RESULTS
 ### Named Entity Recognition
